@@ -41,9 +41,3 @@ header{
   color: white !important;
   /* font-size: 12px !important; */
 }
-
-.slick-dots li button:before {
-  color: rgb(179, 178, 178) !important;
-  font-size: 10px !important;
-  margin-top: 10px;
-}
