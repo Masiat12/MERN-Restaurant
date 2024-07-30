@@ -3,7 +3,7 @@
         "_id": "642c155b2c4774f05c36eeaa",
         "name": "Haddock",
         "recipe": "Chargrilled fresh tuna steak (served medium rare) on classic Niçoise salad with French beans.",
-        "image": "foodi-client/public/images/recipes/img1.png",
+        "image": "/images/recipes/img1.png",
         "category": "salad",
         "price": 14.7
     },
@@ -35,7 +35,7 @@
         "_id": "642c155b2c4774f05c36ee7a",
         "name": "Roast Duck Breast",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "foodi-client/public/images/recipes/img1.png",
+        "image": "/images/recipes/img1.png",
         "category": "popular",
         "price": 14.5
     },

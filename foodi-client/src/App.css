@@ -7,7 +7,10 @@ body{
 header{
 
   z-index: 10001 !important;
+}
 
+.footer-title{
+  color: black !important;
 }
 
 .section-container{
@@ -26,4 +29,15 @@ header{
 
 .heartStar{
   border-radius: 0px 28px 0px 28px;
+}
+
+.active{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #39DB4A;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+  /* font-size: 12px !important; */
 }
