@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+// import { AuthContext } from "../contexts/AuthProvider";
 
 const Modal = () => {
   const {
@@ -10,7 +11,20 @@ const Modal = () => {
     formState: { errors },
   } = useForm();
 
+//   const {signUpWithGmail, login} = useContext(AuthContext);
+
   const onSubmit = (data) => console.log(data);
+
+  // google signin
+  const handleLogin = () => {
+    signUpWithGmail()
+      .then((result) => {
+        const user = result.user;
+        alert("Login successfull!");
+        navigate(from, { replace: true });
+      })
+      .catch((error) => console.log(error));
+  };
 
   return (
     <dialog id="my_modal_3" className="modal modal-middle">
@@ -80,7 +94,7 @@ const Modal = () => {
 
           {/* social sign in */}
           <div className="text-center space-x-3 mb-5">
-            <button className="btn btn-circle hover:bg-green hover:text-white">
+            <button className="btn btn-circle hover:bg-green hover:text-white" onClick={handleLogin}>
               <FaGoogle />
             </button>
             <button className="btn btn-circle hover:bg-green hover:text-white">
@@ -97,3 +111,4 @@ const Modal = () => {
 };
 
 export default Modal;
+

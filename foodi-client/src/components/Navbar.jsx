@@ -165,7 +165,7 @@ const Navbar = () => {
             <FaUser />
             Login
           </button>
-          <Modal/>
+            <Modal/>
         </div>
       </div>
     </header>
